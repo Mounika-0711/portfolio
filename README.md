@@ -20,16 +20,16 @@ The combined dashboard of both projects is displayed on the site. You can also [
 
 ## 🌐 Live Demo
 You can view the website live at:  
-👉 [https://yourusername.github.io/portfolio/](https://yourusername.github.io/portfolio/)
+👉 [https://Mounika-0711.github.io/portfolio/](https://Mounika=0711.github.io/portfolio/)
 
 ## 🛠️ Usage Instructions
 
 To run this project locally:
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Mounika-0711/portfolio.git
 cd portfolio
-open index.html
+open Portfolio Mounika.html
 ```
 
 ## 📫 Contact
