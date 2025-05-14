@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mounika Shenagarapu | Portfolio</title>
+  <style>
+    :root {
+      --bg-light: #f5f5f5;
+      --text-light: #333;
+      --bg-dark: #121212;
+      --text-dark: #e0e0e0;
+      --primary: #0077b5;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background-color 0.4s, color 0.4s;
+    }
+
+    body.dark-mode {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    body.dark-mode .card {
+      background: #1e1e1e;
+      box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 15px;
+      background: var(--primary);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 8px 12px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    img.chart {
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Light</button>
+
+  <header>
+    <h1>Mounika Shenagarapu</h1>
+    <p>Aspiring Data Analyst | Python Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I'm Mounika Shenagarapu, a motivated and detail-oriented Data Analyst currently pursuing my B.Tech in Data Science at Malla Reddy College of Engineering. I have hands-on experience with tools like Excel, SQL, Power BI, and Python, and have completed virtual internships with Accenture and Deloitte. I enjoy transforming raw data into actionable insights that support better business decisions.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2>Projects</h2>
+
+      <h3>Sales Data Analysis Dashboard</h3>
+      <p><strong>Description:</strong> Analyzed over 10,000 sales records to discover trends across different months, regions, and categories. Key performance metrics were visualized to support strategic decisions.</p>
+      <p><strong>Dataset:</strong> <a href="https://www.kaggle.com/datasets/kyanyoga/sample-sales-data" target="_blank">Sample Sales Dataset</a></p>
+      <p><strong>Tools:</strong> Excel, SQL, Power BI</p>
+      <p><strong>Final Visualization:</strong></p>
+      <img src="https://sandbox.openai.com/mnt/data/monthly_sales_chart.png" alt="Sales Dashboard" class="chart" />
+
+
+      <h3>Customer Churn Prediction Model</h3>
+      <p><strong>Description:</strong> Built a machine learning model to predict customer churn with 82% accuracy using logistic regression. Identified key churn indicators to help improve retention strategies.</p>
+      <p><strong>Dataset:</strong> <a href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn" target="_blank">Telco Customer Churn Dataset</a></p>
+      <p><strong>Tools:</strong> Python, scikit-learn, Matplotlib, Seaborn</p>
+      <p><strong>Final Visualization:</strong></p>
+      <img src="https://sandbox.openai.com/mnt/data/churn_by_contract_chart.png" alt="Churn Analysis Chart" class="chart" />
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:shangarapumounika@gmail.com">shangarapumounika@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91-7095696747</p>
+      <p><strong>LinkedIn:</strong> <a class="button" href="https://www.linkedin.com/in/s-mounika-4b0313272" target="_blank">View My Profile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mounika Shenagarapu. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
